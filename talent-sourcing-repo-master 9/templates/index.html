@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Talent Sourcing Homepage</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--<script src="app.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  -->
+
+<style>
+    #header{background: rgb(88,10,10);color: wheat;text-align: center}
+
+    #pie{margin:10%;}
+ 
+    #bar{ margin:10%; }   
+    
+    #bar2{ margin:10%;}
+
+    #bar3{ margin:10%;}
+    #navbar{
+                background: rgb(88,10,10);
+                }
+</style>
+
+</head>
+
+<body>
+
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-sm-12 " id="header">
+              <h1>Talent Source</h1>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" id="navbar">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="#">Talent Source</a> -->
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="/jobsummary"> Job Summary <span class="sr-only">(current)</span></a></li>
+                      <li class="active"><a href="/jobsummary"> Talent Search <span class="sr-only">(current)</span></a></li>
+                      <li class="active"><a href="/jobsummary"> Employee Data Map <span class="sr-only">(current)</span></a></li>
+                      
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+
+
+        <!-- Row 2 -->
+        <div class="row">
+                <div class="col-sm-6" >
+                        <div id="pie"></div>
+                </div>
+
+                <div class="col-sm-6" >
+                    <div id="bar"></div>
+                </div>
+        </div>
+
+    <!--Div ids to plot each of the four graphs-->
+    
+            <!-- Row 3 -->
+            <div class="row">
+                    <div class="col-sm-6" >
+                        <div id="bar2"></div>
+                    </div>
+                    <div class="col-sm-6" >
+                        <div id="bar3"></div>
+                    </div>
+            </div>
+
+    <!--<select id="selDataset" onchange="getData(this.value)"></select> -->
+    <script src="/static/index.js" type="text/javascript"></script>
+</body>
+</html>
